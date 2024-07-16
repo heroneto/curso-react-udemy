@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Timer } from './components/Timer/Timer'
+import { GitUserList } from './components/GitUserList/GitUserList'
 
 function App() {
 
@@ -7,13 +7,13 @@ function App() {
 
   return (
     // <Form />
-    // <GitUserList />
-    <>
-      {showTimer && (
-        <Timer />
-      )}
-      <button onClick={() => setShowTimer(false)} type='button'>Fechar timer</button>
-    </>
+    <GitUserList />
+    // <>
+    //   {showTimer && (
+    //     <Timer />
+    //   )}
+    //   <button onClick={() => setShowTimer(false)} type='button'>Fechar timer</button>
+    // </>
     // <CounterProvider>
     //   <Counter />
     //   <ActionButtons />
