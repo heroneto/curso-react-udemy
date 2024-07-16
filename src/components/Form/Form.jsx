@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export function Form() {
 
@@ -10,6 +10,8 @@ export function Form() {
     console.log('username ', userInputRef.current.value)
 
   }
+
+
 
   return (
     <form onSubmit={handleSubmit}>

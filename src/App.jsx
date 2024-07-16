@@ -1,13 +1,19 @@
-import { Counter } from './components/Counter'
-import { ActionButtons } from './components/ActionButtons/ActionButtons'
-import CounterProvider from './contexts/CounterContext'
-import { Form } from './components/Form/Form'
+import { useState } from 'react'
+import { Timer } from './components/Timer/Timer'
 
 function App() {
 
-  return (
-    <Form />
+  const [showTimer, setShowTimer] = useState(true)
 
+  return (
+    // <Form />
+    // <GitUserList />
+    <>
+      {showTimer && (
+        <Timer />
+      )}
+      <button onClick={() => setShowTimer(false)} type='button'>Fechar timer</button>
+    </>
     // <CounterProvider>
     //   <Counter />
     //   <ActionButtons />
