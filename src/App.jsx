@@ -3,7 +3,7 @@ import { GitUserList } from './components/GitUserList/GitUserList'
 
 function App() {
 
-  const [showTimer, setShowTimer] = useState(true)
+  // const [showTimer, setShowTimer] = useState(true)
 
   return (
     // <Form />
